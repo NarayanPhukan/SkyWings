@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Book a Flight - SkyWings Airlines</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Book Flight - SkyWings</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -18,26 +17,24 @@
     </nav>
   </header>
 
-  <main>
+  <main class="center-form">
     <h2>Book a Flight</h2>
-    <p>Plan your journey with ease by filling out the details below:</p>
     <form>
-      <input type="text" placeholder="Passenger ID" required />
-      <input type="text" placeholder="Origin City" required />
-      <input type="text" placeholder="Destination City" required />
-      <input type="date" required />
+      <input type="text" placeholder="Passenger Name" required>
+      <input type="text" placeholder="Destination" required>
+      <input type="date" required>
       <select required>
-        <option value="">Select Class</option>
-        <option>Economy</option>
-        <option>Business</option>
-        <option>First Class</option>
+        <option value="">Class</option>
+        <option value="Economy">Economy</option>
+        <option value="Business">Business</option>
+        <option value="First">First Class</option>
       </select>
-      <button type="submit">Confirm Booking</button>
+      <button type="submit">Book Now</button>
     </form>
   </main>
 
   <footer>
-    <p>&copy; 2025 SkyWings Airlines. All rights reserved.</p>
+    <p>&copy; 2025 SkyWings Airlines</p>
   </footer>
 </body>
 </html>
