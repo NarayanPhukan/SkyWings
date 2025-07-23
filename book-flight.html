@@ -1,51 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SkyWings | Book Flight</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <header>
-    <h1>Book a Flight</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="book-flight.html">Book Flight</a></li>
-        <li><a href="passenger-details.html">Passenger Details</a></li>
-      </ul>
-    </nav>
-  </header>
+<main>
+  <h2>Flight Booking Form</h2>
+  <p>Fill in the details below to book your flight. Make sure all information is accurate before submission.</p>
 
-  <main>
-    <form class="form-box">
-      <label>Passenger Name:</label>
-      <input type="text" required />
+  <form class="form-box">
+    <label for="pname">Passenger Name:</label>
+    <input type="text" id="pname" placeholder="e.g. Rahul Nair" required />
 
-      <label>Departure City:</label>
-      <input type="text" required />
+    <label for="from">Departure City:</label>
+    <input type="text" id="from" placeholder="e.g. Delhi" required />
 
-      <label>Destination:</label>
-      <input type="text" required />
+    <label for="to">Destination:</label>
+    <input type="text" id="to" placeholder="e.g. London" required />
 
-      <label>Date of Travel:</label>
-      <input type="date" required />
+    <label for="date">Travel Date:</label>
+    <input type="date" id="date" required />
 
-      <label>Class:</label>
-      <select required>
-        <option>Economy</option>
-        <option>Business</option>
-        <option>First</option>
-      </select>
+    <label for="class">Class:</label>
+    <select id="class" required>
+      <option value="">-- Select Class --</option>
+      <option>Economy</option>
+      <option>Business</option>
+      <option>First Class</option>
+    </select>
 
-      <button type="submit">Confirm Booking</button>
-    </form>
-  </main>
+    <label for="seats">Number of Passengers:</label>
+    <input type="number" id="seats" min="1" max="10" required />
 
-  <footer>
-    <p>&copy; 2025 SkyWings Airlines</p>
-  </footer>
-</body>
-</html>
+    <button type="submit">Confirm Booking</button>
+  </form>
+</main>
