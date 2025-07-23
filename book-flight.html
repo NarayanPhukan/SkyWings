@@ -7,7 +7,7 @@
 </head>
 <body>
   <header>
-    <h1>SkyWings Airlines</h1>
+    <h1>Book Your Flight</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="register.html">Register</a>
@@ -17,18 +17,21 @@
     </nav>
   </header>
 
-  <main class="center-form">
-    <h2>Book a Flight</h2>
-    <form>
-      <input type="text" placeholder="Passenger Name" required>
-      <input type="text" placeholder="Destination" required>
+  <main>
+    <form class="form-box">
+      <label>Destination:</label>
+      <input type="text" placeholder="New York" required>
+
+      <label>Travel Date:</label>
       <input type="date" required>
+
+      <label>Class:</label>
       <select required>
-        <option value="">Class</option>
-        <option value="Economy">Economy</option>
-        <option value="Business">Business</option>
-        <option value="First">First Class</option>
+        <option>Economy</option>
+        <option>Business</option>
+        <option>First</option>
       </select>
+
       <button type="submit">Book Now</button>
     </form>
   </main>
