@@ -32,6 +32,26 @@ nav a {
   text-decoration: none;
   font-weight: 500;
 }
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.button {
+  padding: 10px 20px;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #005f8a;
+}
 
 main {
   padding: 2rem;
